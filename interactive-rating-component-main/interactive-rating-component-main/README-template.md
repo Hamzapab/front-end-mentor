@@ -34,8 +34,8 @@ Users should be able to:
 Add
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/Hamzapab/front-end-mentor/tree/main/interactive-rating-component-main/interactive-rating-component-main)
+- Live Site URL: [Netfly](https://interactivecard-of-rate.netlify.app/)
 
 ## My process
 
