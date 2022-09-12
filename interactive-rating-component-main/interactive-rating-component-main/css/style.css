@@ -1,0 +1,118 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+--White: hsl(0, 0%, 100%);
+--Light-Grey: hsl(217, 12%, 63%);
+--Medium-Grey: hsl(216, 12%, 54%);
+--Dark-Blue: hsl(213, 19%, 18%);
+--light-blue:hsl(211, 17%, 24%);
+--Very-Dark-Blue: hsl(216, 12%, 8%);
+--Orange: hsl(25, 97%, 53%);
+}
+body{
+  background-color: var(--Very-Dark-Blue);
+  font-size: 15px;
+  font-family: 'Overpass', sans-serif;
+}
+.container{
+  background-color: var(--Dark-Blue);
+  max-width: 415px;
+  padding: 30px;
+  margin: 0px auto;
+  margin-top: 100px;
+  border-radius: 20px;
+}
+
+@media (max-width:767px) {
+  body{
+    padding: 20px;
+  }
+}
+.icon{
+  background-color:var(--light-blue);
+  padding: 15px;
+  border-radius: 50%;
+}
+h2{
+  padding: 30px 0 15px 0;
+  color: var(--White);
+  font-weight: 700;
+  font-size: 26px;
+}
+p{
+  color: var(--Light-Grey);
+  line-height: 1.6;
+}
+ul{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+li{
+  /* padding: 10px; */
+  width: 40px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  background-color: var(--light-blue);
+  color: var(--Light-Grey);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: .3s;
+}
+.selected{
+  color: var(--White);
+  background-color: var(--Orange);
+}
+li:not(.selected):hover{
+  background-color: var(--Light-Grey);
+  color: var(--White);
+}
+input{
+  border-radius: 50px;
+  color: var(--White);
+  background-color: var(--Orange);
+  width: 100%;
+  border: none;
+  padding: 10px;
+  font-family: 'Overpass', sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: .3s;
+}
+input:hover{
+  background-color: var(--White);
+  color: var(--Orange);
+}
+/* thanks card */
+.thanks{
+  text-align: center;
+  display: none;
+}
+.thanks img{
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+.thanks span{
+  background-color: var(--light-blue);
+  color: var(--Orange);
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+.rate-num{
+  display: inline-block;
+}
+.attribution{
+  max-width: 360px;
+  font-size: 12px;
+  margin: 20px auto;
+  text-align: center;
+  color: var(--light-blue);
+}
