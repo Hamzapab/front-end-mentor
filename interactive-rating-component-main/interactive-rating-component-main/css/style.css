@@ -16,12 +16,16 @@ body{
   background-color: var(--Very-Dark-Blue);
   font-size: 15px;
   font-family: 'Overpass', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .container{
   background-color: var(--Dark-Blue);
   max-width: 415px;
   padding: 30px;
-  margin: 0px auto;
   margin-top: 100px;
   border-radius: 20px;
 }
@@ -52,6 +56,7 @@ ul{
   justify-content: space-between;
   padding: 30px 0;
 }
+
 li{
   /* padding: 10px; */
   width: 40px;
@@ -79,12 +84,17 @@ input{
   background-color: var(--Orange);
   width: 100%;
   border: none;
-  padding: 10px;
+  padding: 15px 0px;
   font-family: 'Overpass', sans-serif;
   font-weight: 700;
   letter-spacing: 2px;
   cursor: pointer;
   transition: .3s;
+}
+@media (max-width:767px) {
+  input{
+    border-radius: 25px;
+  }
 }
 input:hover{
   background-color: var(--White);
@@ -112,7 +122,7 @@ input:hover{
 .attribution{
   max-width: 360px;
   font-size: 12px;
-  margin: 20px auto;
+  margin: 20px 0;
   text-align: center;
   color: var(--light-blue);
 }
