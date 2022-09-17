@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <!-- style css -->
+  <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;700&family=Overpass:ital,wght@0,700;1,400&family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Interactive card details form</title>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <div class="front-card">
+        <img src="./images/bg-card-front.png" alt="" class="front">
+        <img src="./images/card-logo.svg" alt="" class="logo">
+          <span class="info card-num">0000 0000 0000 0000</span>
+          <span class="info card-owner-name">Jane Appleseed</span>
+          <span class="exp-date"><span class="info day-holder">00</span><span>/</span><span class="info year-holder">00</span></span>
+      </div>
+      <div class="back-card">
+        <img src="./images/bg-card-back.png" alt="" class="back">
+        <span class="info cvc-holder">000</span>
+      </div>
+    </div>
+    <div class="card-info">
+      </form>
+      <form>
+        <label>
+          <span class="nmoncd">CARDHOLDER NAME</span>
+          <input class="owner-name" name="nameoncard" maxlength="15" type="text" placeholder="e.g. Jane Appleseed">
+          <span class="error">Incorrect Name</span>
+        </label>
+        <label> 
+          <span class="cdnum">CARD NUMBER</span>
+          <input class="card-number" name="cardnumber" maxlength="19"  placeholder="e.g. 1234 5678 9123 0000">
+          <span class="error">Incorrect Number (only numbers available)</span>
+        </label>
+        <div class="exp-cvc">
+          <label class="exp">
+            <span class="expdt">EXP. DATE (MM/YY)</span>
+            <span class="inp">
+              <div class="day">
+                <input name="experationdate" maxlength="2" type="text" placeholder="MM">
+                <span class="error">Incorrect date</span>
+              </div>
+              <div class="year">
+                <input name="experationdate" type="text" maxlength="2" placeholder="YY">
+                <span class="error">Incorrect Year</span>
+              </div>
+            </span>
+          </label>
+          <label class="cvc">
+            <span class="cvcnum">CVC</span>
+            <input class="cvcinp" name="cvcnumber" type="text" maxlength="3" placeholder="e.g 123">
+            <span class="error">Incorrect CVC</span>
+          </label>
+        </div>
+        <button class="sbmt" type="submit">
+          Confirm
+        </button>
+      </form>
+    </div>
+    <!-- Completed state start -->
+    <div class="thanks">
+      <img src="./images/icon-complete.svg" alt="">
+      <h2>Thank you!</h2>
+      <p>We've added your card details</p>
+      <button class="btn-two">Continue</button>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Hamza_web_dev</a>.
+    </div>
+  </div>
+  <!-- script file -->
+  <script src="./script.js"></script>
+</body>
+</html>
