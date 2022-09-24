@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://github.com/Hamzapab/front-end-mentor/tree/main/intro-section-with-dropdown-navigation-main)
+- Live Site URL:(https://dropmenu-withintro.netlify.app/)
 
 ## My process
 
