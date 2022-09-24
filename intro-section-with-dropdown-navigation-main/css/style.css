@@ -213,6 +213,10 @@ nav #reg{
   border-radius: 8px;
   color: var(--Medium-Gray);
 }
+nav #login:hover,
+nav #reg:hover{
+  color: var(--Almost-Black);
+}
 @media (max-width:767px) {
   nav #login,
   nav #reg{
