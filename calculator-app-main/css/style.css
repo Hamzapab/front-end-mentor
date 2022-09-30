@@ -1,0 +1,313 @@
+:root{
+  --transition: .2s;
+  /* theme 01 */
+  --theme-one--main-background: hsl(222, 26%, 31%);
+  --theme-one-blue-toggle-background-keypad-background: hsl(223, 31%, 20%);
+  --theme-one-blue-screen-background: hsl(224, 36%, 15%);
+  --theme-one-key-background-light: hsl(225, 21%, 49%);
+  --theme-one-key-shadow: hsl(224, 28%, 35%);
+  --theme-one-Red-toggle: hsl(6, 63%, 50%);
+  --theme-one-red-key-shadow: hsl(6, 70%, 34%);
+  --theme-one-key-background-white: hsl(30, 25%, 89%);
+  --theme-one-Grayish-orange: hsl(28, 16%, 65%);
+  --theme-one-grayis-blue: hsl(221, 14%, 31%);
+  --White: hsl(0, 0%, 100%);
+  /* theme 02 */
+  --theme-two-main-background: hsl(0, 0%, 90%);
+  --theme-two-background-nums: hsl(0, 5%, 81%);
+  --theme-two-screen-background: hsl(0, 0%, 93%);
+  --theme-two-del-background: hsl(185, 42%, 37%);
+  --theme-two-del-shadow: hsl(185, 58%, 25%);
+  --theme-two-toggle: hsl(25, 98%, 40%);
+  --theme-twoy-shadow: hsl(25, 99%, 27%);
+  --theme-two-key-background: hsl(45, 7%, 89%);
+  --theme-two-shadow: hsl(35, 11%, 61%);
+  --theme-two-text: hsl(60, 10%, 19%);
+  /* theme 03 */
+  --theme-three-background: hsl(268, 75%, 9%);
+  --theme-three-toggle-back-screen: hsl(268, 71%, 12%);
+  --theme-three-key-back: hsl(281, 89%, 26%);
+  --theme-three-key-shadow: hsl(285, 91%, 52%);
+  --theme-three-pure-cyan: hsl(176, 100%, 44%);
+  --theme-three-soft-cyan: hsl(177, 92%, 70%);
+  --theme-three-key-back-dark: hsl(268, 47%, 21%);
+  --theme-three-key-shadow-two: hsl(290, 70%, 36%);
+  --theme-three-text-yellow: hsl(52, 100%, 62%);
+  --theme-three-text: hsl(198, 20%, 13%);
+}
+/*Start Gloal rules*/
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: var(--transition);
+}
+html{
+  scroll-behavior: smooth;
+}
+body{
+  font-family: 'League Spartan', sans-serif;
+}
+a{
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+}ul li a{
+  text-decoration: none;
+}
+
+/*End Global rules*/
+body{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.theme-one{
+  background-color: var(--theme-one--main-background);
+  color: var(--White);
+}
+.theme-two{
+  background-color: var(--theme-two-main-background);
+  color: var(--theme-two-text);
+}
+.theme-three{
+  background-color: var(--theme-three-background);
+  color: var(--theme-three-text-yellow);
+}
+.calc{
+  padding: 10px;
+  width: 400px;
+  max-width: 100%;
+}
+.top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.theme{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.theme .them-list{
+  display: flex;
+  gap: 5px;
+  border-radius: 10px;
+}
+.theme-one .theme .them-list{
+  background-color: var(--theme-one-blue-toggle-background-keypad-background);
+}
+.theme-two .theme .them-list{
+  background-color: var(--theme-two-background-nums);
+}
+.theme-three .theme .them-list{
+  background-color: var(--theme-three-toggle-back-screen);}
+.theme .them-list span{
+  position: relative;
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.theme-one .them-list span:first-child{
+  background-color: var(--theme-one-Red-toggle);
+}
+.theme-one .them-list span:nth-child(2),
+  .theme-one .them-list span:last-child{
+  background-color: none;
+}
+.theme-two .them-list span:last-child,
+.theme-two .them-list span:first-child{
+  background-color: none;
+}
+.theme-two .them-list span:nth-child(2){
+  background-color: var(--theme-two-toggle);
+}
+.theme-three .them-list span:nth-child(2),
+.theme-three .them-list span:first-child{
+  background-color: none;
+}
+.theme-three .them-list span:last-child{
+  background-color:var(--theme-three-pure-cyan);
+}
+.theme .them-list span::after{
+  position: absolute;
+  font-size: 10px;
+  top: -100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.theme .them-list span:first-child:after{
+  content: "1";
+}
+.theme .them-list span:nth-child(2):after{
+  content: "2";
+}
+.theme .them-list span:last-child::after{
+  content: "3";
+}
+/* screen */
+.affiche{
+  width: 100%;
+  height: 80px;
+  padding: 0 20px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  align-items: flex-end;
+}
+.sous-screen{
+  padding-top: 10px;
+  height: 20px;
+}
+.screen{
+  font-size: 38px;
+  height: 40px;
+}
+.theme-one .affiche{
+  background-color: var(--theme-one-blue-screen-background);
+  color: white;
+}
+.theme-two .affiche{
+  background-color: var(--theme-two-screen-background);
+  color: var(--theme-two-text);
+}
+.theme-three .affiche{
+  background-color: var(--theme-three-toggle-back-screen);
+  color: var(--theme-three-text-yellow);
+}
+/* num */
+.num{
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 20px;
+}
+.theme-one .num{
+  background-color: var(--theme-one-blue-screen-background);
+}
+.theme-two .num{
+  background-color: var(--theme-two-background-nums);
+}
+.theme-three .num{
+  background-color: var(--theme-three-toggle-back-screen);
+}
+.num ul{
+  display: grid;
+  grid-template-columns: repeat(4,calc((100% - 45px) / 4));
+  grid-gap: 15px;
+  margin-bottom: 15px;
+}
+.theme-one .num ul,
+.theme-two .num ul{
+  color: var(--theme-two-text);
+}
+.theme-three .num ul{
+  color: var(--theme-three-text-yellow);
+}
+.num ul li{
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  font-size: 20px;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  cursor: pointer;
+}
+.theme-one .num ul li,
+.theme-two .num ul li{
+  background-color:var(--theme-one-key-background-white);
+  box-shadow: 0px 3px 2px var(--theme-one-key-shadow);
+}
+.theme-one .num ul li:not(.del):hover,
+.theme-two .num ul li:not(.del):hover{
+  background-color: white;
+}
+.theme-three .num ul li{
+  background-color: var(--theme-three-key-back-dark);
+  box-shadow: 0px 3px 2px var(--theme-three-key-shadow-two);
+}
+.theme-three .num ul li:not(.del):hover{
+  background-color: var(--theme-three-key-back);
+}
+.theme-one .del{
+  color: var(--White);
+  background-color: var(--theme-one-key-background-light) !important;
+  box-shadow: 0px 3px 2px var(--theme-one-key-shadow) !important;
+}
+.theme-one .del:hover{
+  background-color: hsl(225, 14%, 66%) !important;
+}
+.theme-two .del{
+  color: var(--White);
+  background-color: var(--theme-two-del-background) !important;
+  box-shadow: 0px 3px 2px var(--theme-two-del-shadow) !important;
+}
+.theme-two .del:hover{
+  background-color: hsl(185, 40%, 54%)!important;
+}
+.theme-three .del{
+  color: var(--White);
+  background-color:  var(--theme-three-key-back) !important;
+  box-shadow: 0px 3px 2px var(--theme-three-key-shadow-two) !important;
+}
+.theme-three .del:hover{
+  background-color:  var(--theme-three-key-shadow-two) !important;
+}
+.sum{
+  color: black;
+  display: grid;
+  grid-template-columns: repeat(2,calc((100% - 15px) / 2));
+  grid-gap: 15px;
+}
+.sum span{
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  font-size: 20px;
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  cursor: pointer;
+}
+.theme-one .sum .eql{
+  color: var(--White);
+  background-color: var(--theme-one-Red-toggle) ;
+  box-shadow: 0px 3px 2px var(--theme-one-red-key-shadow);
+}
+.theme-one .sum .eql:hover{
+  background-color: hsl(9, 78%, 61%) ;
+}
+.theme-two .sum .eql{
+  color: var(--White);
+  background-color: var(--theme-two-toggle) ;
+  box-shadow: 0px 3px 2px var(--theme-twoy-shadow);
+}
+.theme-two .sum .eql:hover{
+  background-color: hsl(25, 73%, 57%) ;
+}
+.theme-three .sum .eql{
+  background-color: var(--theme-three-pure-cyan);
+  box-shadow: 0px 3px 2px var( --theme-three-soft-cyan);
+}
+.theme-three .sum .eql:hover{
+  background-color:var( --theme-three-soft-cyan);
+}
