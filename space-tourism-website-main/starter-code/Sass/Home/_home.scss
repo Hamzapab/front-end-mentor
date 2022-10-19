@@ -1,0 +1,62 @@
+/*Start Home */ 
+body.home{
+  background: url(/assets/home/background-home-desktop.jpg);
+  .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 70px;
+    @media (max-width:767px) {
+      flex-direction: column;
+      gap: 20px;
+    }
+    .content{
+      max-width: 45%;
+      h2{
+        font-family: var(--font-con);
+        font-weight: 300;
+        color: #D2D8F9;
+        font-size: 28px;
+        letter-spacing: 4.75px;
+        text-transform: uppercase;
+      }
+      h1{
+        font-family: var(--font-belle);
+        font-size: 10rem;
+        font-weight: 200;
+        padding: 20px 0;
+      }
+      p{
+        font-family: var(--font-bar);
+        font-size: 19px;
+        line-height: 1.8;
+        color: #D2D8F9;
+      }
+      @media (max-width:767px) {
+        max-width: 100%;
+        text-align: center;
+        h1{
+          font-size: 6rem;
+        }
+      }
+    }
+  }
+  .exp{
+    background-color: white;
+    width: 260px;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    color: #0C0E18;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 34px;
+    font-family: var(--font-belle);
+    @media (max-width:767px) {
+      width: 150px;
+      font-size: 28px;
+    }
+  }
+}
+
+/*Start Home */ 

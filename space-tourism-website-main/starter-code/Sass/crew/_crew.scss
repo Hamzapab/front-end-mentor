@@ -1,0 +1,61 @@
+/*Start crew*/ 
+body.crew{
+  background: url(/assets/crew/background-crew-desktop.jpg);
+  .container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    gap: 200px;
+    @media (max-width:992px) {
+      flex-direction: column;
+      text-align: center;
+      gap: 20px;
+    }
+    .crew-team{
+      padding-top: 70px;
+      span{
+        color: #ffffff80;
+        font-family: var(--font-belle);
+        font-size: 30px;
+      }
+      h1{
+        font-family: var(--font-belle);
+        font-weight: 400;
+        font-size: 36px;
+        padding: 20px 0;
+      }
+      p{
+        font-family: var(--font-bar);
+        font-size: 18px;
+        line-height: 1.8;
+        color: #D2D8F9;
+        padding-bottom: 20px;
+      }
+      ul{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        gap: 15px;
+        li{
+          width: 15px;
+          aspect-ratio: 1/1;
+          border: 1px solid #ffffff80;
+          border-radius: 50%;
+          cursor: pointer;
+        }
+        .selcted-team-crew{
+          background-color: #D2D8F9;
+        }
+      }
+    }
+    .crew-image{
+      img{
+        width: 350px;
+        @media (max-width:767px) {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+/*End Crew*/ 

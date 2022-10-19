@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
+  <title>Frontend Mentor | Space tourism website</title>
+
+</head>
+<body class="destination">
+  <header>
+    <img src="./assets/shared/logo.svg" alt="">
+    <nav class="target">
+      <ul>
+        <li><a href="index.html">00 Home</a></li>
+        <li class="selected-nav"><a href="destination-moon.html">01 Destination</a></li>
+        <li><a href="crew-commander.html">02 Crew</a></li>
+        <li><a href="technology-capsule.html">03 Technology</a></li>
+      </ul>
+    </nav>
+    <div class="humbergur target">
+      <span class="off"></span>
+      <span class="off"></span>
+      <span class="off"></span>
+    </div>
+  </header>
+  <div class="container">
+    <div class="content">
+      <h2 class="subhead"> <span>01</span> Pick your destination </h2>
+      <img id="dest-imag" src="./assets/destination/image-moon.png" alt="">
+    </div>
+    <div class="planet">
+      <ul>
+        <li class="selcted-team-dest">Moon</li>
+        <li>Mars</li>
+        <li>Europa</li>
+        <li>Titan</li>
+      </ul>
+      <h1>Moon</h1>
+      <p> See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
+        regain perspective and come back refreshed. While you’re there, take in some history 
+        by visiting the Luna 2 and Apollo 11 landing sites.</p>
+        <div class="data">
+          <div>
+            <span>Avg. distance</span>
+            <p id="km">384,400 km</p>
+          </div>
+          <div>
+            <span>Est. travel time</span>
+            <p id="time">3 days</p>
+          </div>
+        </div>
+    </div>
+  </div>
+  <!-- scritp file -->
+  <script src="./js/script.js"></script>
+</body>
+</html>

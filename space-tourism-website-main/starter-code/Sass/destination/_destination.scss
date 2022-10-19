@@ -1,0 +1,98 @@
+/*Start Destination*/ 
+body.destination{
+  background: url(/assets/destination/background-destination-desktop.jpg);
+  .container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    gap: 200px;
+    @media (max-width:992px) {
+      flex-direction: column;
+      text-align: center;
+      gap: 20px;
+    }
+    .content{
+      img{
+        width: 400px;
+        @media (max-width:767px) {
+          max-width: 100%;
+        }
+      }
+    }
+    .planet{
+      @media (max-width:767px) {
+        text-align: center;
+      }
+      ul{
+        display: flex;
+        margin-bottom: 20px;
+        gap: 40px;
+        @media (max-width:992px) {
+          gap: 20px;
+          justify-content: center;
+        }
+        li{
+          font-family: var(--font-con);
+          font-size: 24px;
+          overflow-x: hidden;
+          padding-bottom: 10px;
+          position: relative;
+          cursor: pointer;
+          &::after{
+            content:"";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: #fff;
+            bottom: 0;
+            left: -100%;
+            transition: .4s;
+          }
+          &:hover::after{
+            left: 0;
+          }
+        }
+        .selcted-team-dest{
+          &::after{
+            left: 0;
+          }
+        }
+      }
+      h1{
+        font-family: var(--font-belle);
+        font-weight: 200;
+        font-size: 7rem;
+        @media (max-width:767px) {
+          font-size: 5rem;
+        }
+        padding: 10px 0;
+        text-transform: uppercase;
+      }
+      >p{
+        font-family: var(--font-bar);
+        font-size: 17px;
+        line-height: 1.8;
+        color: #D2D8F9;
+        padding-bottom: 20px;
+        border-bottom: 2px solid #fff;
+      }
+      .data{
+        display: flex;
+        justify-content: space-between;
+        padding: 15px 0;
+        font-family: var(--font-bar);
+        span{
+          color: #D2D8F9;
+          font-size: 16px;
+        }
+        p{
+          font-family: var(--font-belle);
+          font-size: 1.6rem;
+          padding: 5px 0;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
+/*End Destination*/ 
