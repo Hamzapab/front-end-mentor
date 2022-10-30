@@ -1,0 +1,96 @@
+.container{
+  background-color: var(--White);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  .head-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    h1{
+      font-size: 1.2rem;
+      color:var(--Very-dark-blue); 
+      span{
+        font-size: .9rem;
+        background-color: var(--Blue);
+        color: white;
+        padding: 3px 8px;
+        border-radius: 5px;
+      }   
+    }
+    p{
+      color: var(--Blue);
+      cursor: pointer;
+    }
+  }
+  ul{
+    li{
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      /*no readed notification*/
+      &.not-readed{
+        background-color: var(--Light-grayish-blue-1);
+        .notification{
+          display: inline-block;
+          background-color: var(--Red);
+          width: 10px;
+          aspect-ratio: 1/1;
+          border-radius: 50%;
+        }
+      }
+      .avatar{
+        align-self: flex-start;
+      }
+      img{
+        width: 60px;
+      }
+      .info{
+        p{
+          margin-bottom: 5px;
+          .name{
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: var(--transition);
+            &:hover{
+              color: var(--Blue);
+            }
+          }
+          .post{
+            color: var(--Very-dark-blue);
+            font-weight: bold;
+            transition: var(--transition);
+            cursor: pointer;
+            &:hover{
+              color: var(--Blue);
+            }
+          }
+          .group{
+            color:var(--Blue); 
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: var(--transition);
+            &:hover{
+              color: var(--Blue);
+            }
+          }
+        }
+        >span{
+          font-size: .8rem;
+          color: var(--Grayish-blue);
+        }
+        .msg{
+          border: 1px solid var(--Very-dark-blue);
+          border-radius: 5px;
+          padding: 10px;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}

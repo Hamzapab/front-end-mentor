@@ -1,0 +1,166 @@
+/*Start Global Rules*/
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: gainsboro;
+}
+
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+/***** MEDIA QUERIES***************/
+/**** other device ***********/
+@media (min-width: 508px) {
+  .container {
+    width: 490px;
+  }
+}
+/*ENd Global Rules*/
+.container {
+  background-color: var(--White);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.container .head-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+.container .head-info h1 {
+  font-size: 1.2rem;
+  color: var(--Very-dark-blue);
+}
+.container .head-info h1 span {
+  font-size: 0.9rem;
+  background-color: var(--Blue);
+  color: white;
+  padding: 3px 8px;
+  border-radius: 5px;
+}
+.container .head-info p {
+  color: var(--Blue);
+  cursor: pointer;
+}
+.container ul li {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+  /*no readed notification*/
+}
+.container ul li.not-readed {
+  background-color: var(--Light-grayish-blue-1);
+}
+.container ul li.not-readed .notification {
+  display: inline-block;
+  background-color: var(--Red);
+  width: 10px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+.container ul li .avatar {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+.container ul li img {
+  width: 60px;
+}
+.container ul li .info p {
+  margin-bottom: 5px;
+}
+.container ul li .info p .name {
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+.container ul li .info p .name:hover {
+  color: var(--Blue);
+}
+.container ul li .info p .post {
+  color: var(--Very-dark-blue);
+  font-weight: bold;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+  cursor: pointer;
+}
+.container ul li .info p .post:hover {
+  color: var(--Blue);
+}
+.container ul li .info p .group {
+  color: var(--Blue);
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+.container ul li .info p .group:hover {
+  color: var(--Blue);
+}
+.container ul li .info > span {
+  font-size: 0.8rem;
+  color: var(--Grayish-blue);
+}
+.container ul li .info .msg {
+  border: 1px solid var(--Very-dark-blue);
+  border-radius: 5px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+:root {
+  --Red: hsl(1, 90%, 64%);
+  --Blue: hsl(219, 85%, 26%);
+  --White: hsl(0, 0%, 100%);
+  --Very-light-grayish-blue: hsl(210, 60%, 98%);
+  --Light-grayish-blue-1: hsl(211, 68%, 94%);
+  --Light-grayish-blue-2: hsl(205, 33%, 90%);
+  --Grayish-blue: hsl(219, 14%, 63%);
+  --Dark-grayish-blue: hsl(219, 12%, 42%);
+  --Very-dark-blue: hsl(224, 21%, 14%);
+  --transition:.3s;
+}
+/*# sourceMappingURL=main.css.map */

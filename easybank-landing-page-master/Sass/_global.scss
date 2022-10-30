@@ -1,0 +1,146 @@
+/*Start Global Rules*/ 
+:root{
+  --Dark-Blue: hsl(233, 26%, 24%);
+  --Lime-Green: #31d35c;
+  --Bright-Cyan: #2bb7da;
+  --Grayish-Blue: #9698a6;
+  --light-Grayish-Blue: #f3f4f6;
+  --Very-Light-Gray: #fafafa;
+  --White: #ffffff;
+  --transiton : .4s ease;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+ul{
+  list-style: none;
+}
+body{
+  font-size: 18px;
+  font-family: 'Public Sans', sans-serif;
+}
+.no-scroll{
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+.container{
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+a{
+  text-decoration: none;
+}
+/***** MEDIA QUERIES***************/
+/**** SM-Device******/
+@media (min-width:768px){
+  .container{
+      width: 750px;
+  }
+
+}
+/*******MD-device**********/
+@media (min-width:992px){
+  .container{
+      width: 970px;
+  }
+  
+}
+/****************XL-Device ************/
+@media (min-width:1200px){
+  .container{
+      width: 1117px;
+      
+  }    
+}
+/*ENd Global Rules*/ 
+/*Common component */ 
+[type="button"]{
+  border: none;
+  color: white;
+  background-image: linear-gradient(to right, var(--Lime-Green), var(--Bright-Cyan));  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: opacity var(--transiton);
+  &:hover{
+    opacity: .75;
+  }
+}
+.humbergur{
+  position: relative;
+  width: 40px;
+  aspect-ratio: 1/1;
+  cursor: pointer;
+  display: none;
+  @media (max-width:767px) {
+    display: block;
+  }
+  span {
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background: var(--Grayish-Blue);
+    border-radius: 100px;
+    display: inline-block;
+    transition: 0.3s ease;
+    left: 0;
+  }
+  span.top {
+    top: 12px;
+  }
+  
+  span.middle {
+    top: 20px;
+  }
+  
+  span.bottom {
+    top: 28px;
+  }
+  .on.top {
+    transform: rotate(45deg);
+    transform-origin: top left;
+    left: 6px;
+  }
+  .on.bottom {
+    transform: rotate(-45deg);
+    transform-origin: top left;
+    left: 5px;
+  }
+  
+  .on.middle {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+}
+.overlay{
+  position: fixed;
+  top: 40px;
+  right: 0px;
+  left: 0;
+  bottom: 0;
+  background-image: linear-gradient(var(--Dark-Blue), transparent);
+  opacity: 0;
+  transition: var(--transiton);
+}
+.overlay.open{
+  z-index: 98;
+  opacity: 1;
+}
+/*End Common component */ 
+/*speacial classes */ 
+.p_y{
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+/*End speacial classes */ 

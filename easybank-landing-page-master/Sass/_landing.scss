@@ -1,0 +1,81 @@
+/******** Strat Landing***************/ 
+.landing{
+  position: relative;
+  z-index: 2;
+  .hero-image{
+    position: relative;
+    right: 15px;
+    width: calc(100% + 30px);
+    background-image: url(/images/bg-intro-mobile.svg);;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 17.5rem;
+    &::after{
+      content: "";
+      position: absolute;
+      background: url(/images/image-mockups.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center bottom;
+      width: calc(100% - 30px);
+      height: 100%;
+      top: 0px;
+      right: 15px;
+    }
+  }
+  .content{
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px 0;
+    h1{
+      font-size: 36px;
+      @media (max-width:337px) {
+        font-size: 1.8rem;
+      }
+      font-weight: 400;
+    }
+    p{
+      color: var(--Grayish-Blue);
+      padding: 20px 0;
+    }
+    [type="button"]{
+      font-size: 1rem;
+    }
+  }
+  @media (min-width:768px) {
+    background-color: var(--Very-Light-Gray);
+    height: 445px;
+    .hero-image{
+      background-image: url(/images/bg-intro-desktop.svg);
+      background-position: left top -160px;
+      position: absolute;
+      width: 50%;
+      right: 0px;
+      min-height: 41rem;
+      &::after{
+        background-position: right -80px top -80px;
+        background-size: 80%;
+        width: 620px;
+        right: 0;
+      }
+    }
+    .content{
+      width: 45%;
+      text-align: start;
+      padding-top: 70px;
+      margin: 0;
+      h1{
+        font-size: 2.5rem;
+        @media (min-width:992px) {
+          font-size: 3rem;
+        }
+      }
+      p{
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+/*********End Landing***************/ 
