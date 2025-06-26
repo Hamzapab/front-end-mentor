@@ -37,9 +37,9 @@ See proper hover and focus states for interactive elements
 ![](./src/assets/design/preview.PNG)
 
 ## 🔗 Links
-🔧 Solution Code: GitHub Repository
+🔧 Solution Code: [See code](https://github.com/Hamzapab/front-end-mentor/tree/main/IP%20Adress%20Tracker)
 
-🌐 Live Site: Live Demo (replace with actual deployed link)
+🌐 Live Site: Live Demo [Preview](https://ipaddtracke.netlify.app/)
 
 ## 🛠️ My Process
 
@@ -67,7 +67,7 @@ Handling responsive layout and UI logic with Tailwind CSS
 Managing state and form input handling in React
 
 ## 👨‍💻 Author
-🌐 Website – hamzapab.netlify.app
+🌐 Website – (https://hamzapab.netlify.app)
 
 🐙 GitHub – [@Hamzapab](https://github.com/Hamzapab)
 
