@@ -1,0 +1,69 @@
+@import "tailwindcss";
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Ubuntu bold';
+  src: url('/assets/fonts/Ubuntu-Bold.ttf') format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu mid';
+  src: url('/assets/fonts/Ubuntu-Medium.ttf') format('truetype');
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Ubuntu reg';
+  src: url('/assets/fonts/Ubuntu-Regular.ttf') format('truetype');
+  font-style: normal;
+}
+
+body{
+  font-family: 'Ubuntu reg';
+  background-color: #eef5ff;
+}
+@layer utilities {
+  .bg-mobile {
+    background-image: url('/assets/images/bg-sidebar-mobile.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+    @media (min-width: 768px) {
+    .md\:bg-desktop {
+      background-image: url('/assets/images/bg-sidebar-desktop.svg');
+      background-size:cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+/* Header */
+
+.stepper li {
+  font-family: 'Ubuntu bold';
+}
+
+.bld{
+  font-family: 'Ubuntu bold';
+}
+.mid{
+  font-family: 'Ubuntu mid';
+}
+.reg{
+  font-family: 'Ubuntu reg';
+}
+
+/* Animation */
+@keyframes dropFade {
+    0% { opacity: 0; transform: translateY(-20px); }
+    30% { opacity: 1; transform: translateY(40px); }
+    80% { opacity: 1; transform: translateY(40px); }
+    100% { opacity: 0; transform: translateY(40px); }
+  }
+
+  .animate-dropFade {
+    animation: dropFade 3s ease-in-out forwards;
+  }

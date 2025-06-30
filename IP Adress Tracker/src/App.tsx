@@ -30,7 +30,7 @@ export interface IpifyResponse {
 }
 
 function App() {
-  const [position, setPosition] = useState(new LatLng(35.6971, -0.6308)); 
+  const [position, setPosition] = useState(new LatLng(35.6971, -0.6308));  // Oran position as default
 
   // Store fetched IP data in state, initially null
   const [data, setData] = useState<IpifyResponse | null>(null);
@@ -46,7 +46,7 @@ const handleSearch = async (ip: string) => {
         throw new Error("Failed to fetch IP location");
       }
 
-       const data = await response.json();
+       const data : IpifyResponse = await response.json();
       // get lat , lng from data > location 
       const { lat, lng } = data.location;
        // Update the map position
