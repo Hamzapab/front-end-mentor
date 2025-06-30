@@ -27,9 +27,9 @@ Users should be able to:
 ![](./src/assets/images/preview.PNG)
 
 ## 🔗 Links
-🔧 Solution Code: [See code](https://github.com/yourusername/multi-step-form) 
+🔧 Solution Code: [See code](https://github.com/Hamzapab/front-end-mentor/tree/main/Multi%20Step%20From%20Main) 
 
-🌐 Live Site: Live Demo [Preview](https://your-site-url.com)
+🌐 Live Site: Live Demo [Preview](https://mltiform.netlify.app/)
 
 ## 🛠️ My Process
 
