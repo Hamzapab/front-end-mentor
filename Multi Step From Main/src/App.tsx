@@ -178,7 +178,7 @@ const steps = [
               <div className="flex w-full items-center gap-2  justify-center">by 
                 <a href="https://hamzapab.netlify.app/" target="blanc" 
                   className="flex items-center justify-center w-8 h-8 rounded-full border border-[#5ff1d0] cursor-pointer">
-                   <img  src="./public/favicon.ico" alt="favicon" />
+                   <img  className="w-4" src="/assets/images/hamza.png" alt="Logo" />
                 </a>
               </div>
       </div>
