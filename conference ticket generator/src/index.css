@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'Inconsolata';
+  src: url('/assets/fonts/Inconsolata-VariableFont_wdth,wght.ttf') format('truetype');
+}
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.pattern1 {
+  background: url('/assets/images/pattern-lines.svg') no-repeat center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.pattern2 {
+  background: url('/assets/images/pattern-squiggly-line-top.svg') no-repeat center;
+  background-size: cover;
+  width: 90px;
+  height: 45px;
+}
+
+.pattern3 {
+  background: url('/assets/images/pattern-squiggly-line-bottom-mobile-tablet.svg') no-repeat center;
+  background-size: cover;
+  width: 240px;
+  height: 155px;
+}
+
+
+@media (min-width:667px) {
+  .pattern2{
+    width: 200px;
+    height: 110px; 
+  }
+}
+@media (min-width:1024px) {
+
+  .pattern3 {
+    background: url('/assets/images/pattern-squiggly-line-bottom-desktop.svg') no-repeat center;
+    background-size: cover;
+    width: 340px;
+    height: 205px;
+  }
+}
