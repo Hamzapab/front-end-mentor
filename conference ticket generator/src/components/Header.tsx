@@ -7,7 +7,7 @@ export type HeaderProps = {
 export function Header({showTitle}:HeaderProps){
    return(
       <div className="header flex flex-col items-center text-center px-1">
-         <img className='w-[150px] md:w-[250px] mb-3' src="/public/assets/images/logo-full.svg" alt="logo" />
+         <img className='w-[150px] md:w-[250px] mb-3' src="/assets/images/logo-full.svg" alt="logo" />
         {!showTitle && 
           <>
           <h1 className='font-bold my-4 text-2xl'>Your Journey to Coding Conf 2025 Starts Here!</h1>
