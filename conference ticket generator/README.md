@@ -44,9 +44,10 @@ Users should be able to:
 ![](./preview.jpg)
 
 ## 🔗 Links
-🔧 Solution Code: View on GitHub
 
-🌐 Live Demo: View Site 
+🔧 Solution Code: [See code](https://github.com/Hamzapab/front-end-mentor/tree/main/conference%20ticket%20generator)
+
+🌐 Live Site: Live Demo [Preview](https://conferrenceticket.netlify.app/)
 
 
 ## 🔧 Built With
