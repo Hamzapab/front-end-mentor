@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+
+/* Custom Animation */
+@layer utilities {
+  .animate-scalePulse {
+    animation: scalePulse 2s ease-in-out infinite;
+  }
+
+  @keyframes scalePulse {
+    0%, 100% {
+      transform: scale(0.9);
+    }
+    50% {
+      transform: scale(1);
+    }
+  }
+}
+
+body{
+   font-family: "Red Hat Text", sans-serif;
+   background-color:#fcf9f7;
+   scroll-behavior: smooth;
+}
