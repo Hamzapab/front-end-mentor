@@ -11,7 +11,7 @@ export default function Footer() {
       <div className="container mx-auto text-xl text-[#bfbfbf] text-center flex flex-col items-center md:flex-row md:items-start justify-between">
         <img
           className="w-25 mb-10"
-          src="/src/assets/images/logo_white.png"
+          src="/assets/images/logo_white.png"
           alt="Logo"
         />
         <ul className="flex flex-col items-center md:items-start gap-3 mb-5">

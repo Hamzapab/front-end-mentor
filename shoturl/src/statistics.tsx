@@ -10,7 +10,7 @@ export default function Statis() {
           <div className="icon lg:self-start bg-[#3b3054] transform -translate-y-1/2 w-18 h-18 rounded-full flex items-center justify-center
           enter">
             <img
-              src="src/assets/images/icon-brand-recognition.svg"
+              src="/assets/images/icon-brand-recognition.svg"
               alt="recognition"
             />
           </div>
@@ -29,7 +29,7 @@ export default function Statis() {
            bottom-[-80px] lg:hidden"></div>
           <div className="icon lg:self-start bg-[#3b3054] transform -translate-y-1/2 w-18 h-18 rounded-full flex items-center justify-center">
             <img
-              src="src/assets/images/icon-detailed-records.svg"
+              src="/assets/images/icon-detailed-records.svg"
               alt="records"
             />
           </div>
@@ -44,7 +44,7 @@ export default function Statis() {
         <div className="bg-white z-0 px-4 pb-8 mb-16 lg:mb-5 lg:translate-y-20 lg:items-start rounded-sm flex flex-col items-center text-center">
           <div className="icon lg:self-start bg-[#3b3054] transform -translate-y-1/2 w-18 h-18 rounded-full flex items-center justify-center">
             <img
-              src="src/assets/images/icon-fully-customizable.svg"
+              src="/assets/images/icon-fully-customizable.svg"
               alt="customization"
             />
           </div>

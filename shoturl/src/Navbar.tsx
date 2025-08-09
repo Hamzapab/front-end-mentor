@@ -18,7 +18,7 @@ export default function Navbar() {
         <div className="logo ">
           <img
             className="w-20 md:w-auto"
-            src="src/assets/images/logo.svg"
+            src="/assets/images/logo.svg"
             alt="logo"
           />
         </div>

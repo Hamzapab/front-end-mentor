@@ -89,7 +89,7 @@ export function Home() {
         <div className=" mx-auto flex flex-col md:flex-row items-center">
           <div
             className="w-full md:flex-1 h-[350px] md:h-auto min-h-[300px] md:order-1
-        bg-[url('src/assets/images/illustration-working.svg')] 
+        bg-[url('/assets/images/illustration-working.svg')] 
         bg-cover md:bg-contain bg-no-repeat bg-left md:bg-right rounded-lg"
           ></div>
           <div className="text-center md:text-start  p-6 md:px-20 md:flex-1">
@@ -114,11 +114,11 @@ export function Home() {
         <div className="container relative bg-[#3b3054] p-6 py-8 md:p-12 rounded-lg">
           <div
           className="md:hidden w-[70%] h-[67%]  absolute top-0 right-0 -z-0
-        bg-[url('src/assets/images/bg-shorten-mobile.svg')] bg-cover bg-left rounded-lg"
+        bg-[url('/assets/images/bg-shorten-mobile.svg')] bg-cover bg-left rounded-lg"
         ></div>
           <div
           className="hidden md:block w-[100%] h-[100%]  absolute top-0 right-0 -z-0
-        bg-[url('src/assets/images/bg-shorten-desktop.svg')] bg-cover bg-center rounded-lg"
+        bg-[url('/assets/images/bg-shorten-desktop.svg')] bg-cover bg-center rounded-lg"
         ></div>
         <form onSubmit={handleSubmit(onSubmit)} className="relative z-1 flex flex-col md:flex-row items-center md:items-start md:gap-10">
           <div className="flex-1 w-full md:w-auto">
@@ -186,7 +186,7 @@ export function Home() {
       <div className="relative bg-[#3b3054] py-42 md:py-20 z-1">
         <div
           className="w-[100%] h-[100%]  absolute top-0 right-0 -z-1
-        bg-[url('src/assets/images/bg-boost-desktop.svg')] bg-cover bg-no-repeat bg-center "
+        bg-[url('/assets/images/bg-boost-desktop.svg')] bg-cover bg-no-repeat bg-center "
         ></div>
         <div className="container mx-auto text-center ">
           <h2 className="text-5xl text-white font-bold mb-12">Boost Your links today</h2>
