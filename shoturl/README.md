@@ -33,9 +33,9 @@ Users should be able to:
 
 # 🔗 Links
 
-- 🔧 Solution Code: See code  
+- 🔧 Solution Code: [See code ](https://github.com/Hamzapab/front-end-mentor/tree/main/shoturl) 
 
-- 🌐 Live Site: Live Demo Preview  
+- 🌐 Live Site: [Live Demo Preview ](https://shortenurl2.netlify.app) 
 
 # 🔧 Built With
 - ⚛️ React - Component-based UI library  
