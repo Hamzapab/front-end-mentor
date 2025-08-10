@@ -39,7 +39,7 @@ export function Home() {
 
   async function shortenUrl(data: FormData) {
     const response = await fetch(
-      import.meta.env.VITE_API_URL,
+      "/netlify/functions/shorten-url",
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
