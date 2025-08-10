@@ -7,14 +7,14 @@ import {
 
 export default function Footer() {
   return (
-    <div className="footer bg-[#232127] p-10 md:px-20">
-      <div className="container mx-auto text-xl text-[#bfbfbf] text-center flex flex-col items-center md:flex-row md:items-start justify-between">
+    <div className="footer bg-[#232127] p-10 lg:px-20">
+      <div className="container mx-auto text-xl text-[#bfbfbf] text-center flex flex-col items-center lg:flex-row lg:items-start justify-between">
         <img
           className="w-25 mb-10"
           src="/assets/images/logo_white.png"
           alt="Logo"
         />
-        <ul className="flex flex-col items-center md:items-start gap-3 mb-5">
+        <ul className="flex flex-col items-center lg:items-start gap-3 mb-5">
           <li className="font-bold text-white mb-4">Features</li>
           <li>
             <a
@@ -42,7 +42,7 @@ export default function Footer() {
           </li>
         </ul>
 
-        <ul className="flex flex-col items-center md:items-start gap-3 mb-5">
+        <ul className="flex flex-col items-center lg:items-start gap-3 mb-5">
           <li className="font-bold text-white mb-4">Resources</li>
           <li>
             <a
@@ -70,7 +70,7 @@ export default function Footer() {
           </li>
         </ul>
 
-        <ul className="flex flex-col items-center md:items-start gap-3 mb-5">
+        <ul className="flex flex-col items-center lg:items-start gap-3 mb-5">
           <li className="font-bold text-white mb-4">Company</li>
           <li>
             <a
@@ -106,7 +106,7 @@ export default function Footer() {
           </li>
         </ul>
 
-        <div className="flex gap-8 my-10 md:mt-0">
+        <div className="flex gap-8 my-10 lg:mt-0">
           <a
             href="https://facebook.com"
             aria-label="Facebook"
