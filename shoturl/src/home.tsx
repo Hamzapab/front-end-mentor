@@ -39,7 +39,7 @@ export function Home() {
 
   async function shortenUrl(data: FormData) {
     const response = await fetch(
-      "/netlify/functions/shorten-url",
+      "./netlify/functions/shorten-url",
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -120,8 +120,8 @@ export function Home() {
           className="hidden md:block w-[100%] h-[100%]  absolute top-0 right-0 -z-0
         bg-[url('/assets/images/bg-shorten-desktop.svg')] bg-cover bg-center rounded-lg"
         ></div>
-        <form onSubmit={handleSubmit(onSubmit)} className="relative z-1 flex flex-col md:flex-row items-center md:items-start md:gap-10">
-          <div className="flex-1 w-full md:w-auto">
+        <form onSubmit={handleSubmit(onSubmit)} className="relative z-1 flex flex-col md:flex-row items-center md:items-start gap-3.5 md:gap-10">
+          <div className="flex-1 relative w-full md:w-auto">
             <input
             type="url"
             {...register("url")}
@@ -133,7 +133,7 @@ export function Home() {
              }`}
             placeholder="Shorten a Link here..."
           />
-          <div className="h-10 w-[100%] mt-2">
+          <div className="absolute -bottom-6 left-0">
             {errors.url && (
               <p className="text-red-500 text-sm mt-1">{errors.url.message}</p>
             )}
