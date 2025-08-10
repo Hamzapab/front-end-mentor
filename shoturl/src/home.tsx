@@ -39,7 +39,7 @@ export function Home() {
 
   async function shortenUrl(data: FormData) {
     const response = await fetch(
-      "./netlify/functions/shorten-url",
+      "/.netlify/functions/shorten-url",
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
