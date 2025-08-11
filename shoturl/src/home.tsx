@@ -115,7 +115,7 @@ export function Home() {
       </header>
       {/* Shorten Section */}
       <main id="shorten" className="shorten -mt-20 p-6 py-8 md:px-20" role="main">
-        <section className="container relative bg-[#3b3054] p-6 py-8 md:p-12 rounded-lg" aria-labelledby="shorten-link-form">
+        <section className="container relative mx-auto bg-[#3b3054] p-6 py-8 md:p-12 rounded-lg" aria-labelledby="shorten-link-form">
           <div
             className="md:hidden w-[70%] h-[67%] absolute top-0 right-0 -z-0
             bg-[url('/assets/images/bg-shorten-mobile.svg')] bg-cover bg-left rounded-lg"
@@ -175,7 +175,7 @@ export function Home() {
           </form>
         </section>
         {/* Result section */}
-        <section className="space-y-4 mt-6 p-6 md:px-20" aria-label="Shortened URLs">
+        <section className="mt-6 py-6" aria-label="Shortened URLs">
           <div className="container mx-auto">
             {shortUrls.map((link, idx) => (
               <div key={idx} className="bg-white rounded-lg py-5 mb-5" role="region" aria-label={`Shortened URL ${idx + 1}`}>
