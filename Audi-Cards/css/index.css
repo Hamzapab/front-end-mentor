@@ -1,0 +1,566 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Roboto', sans-serif;
+    background-color: #e0e4ed;
+}
+/* variables */
+:root{
+    --main-color:#FDB900;
+    --color_1:#E2E2E2;
+    --color_2:#f2db8c;
+    --color_3:#a80f09;
+    --color_4:#AAABBC;
+    --color_5:#080a5f;
+    --color_6:#0DD965;
+    --color_7:#FFFEFF;
+    --color-9:#E5E5E5;
+    --color-10:#D7D6DC;
+    --color-11:#D7D6DF;
+    --card-background:#F2F2F2;
+}
+.container{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill ,minmax(300px,1fr));
+    gap:20px;
+}
+/***** MEDIA QUERIES***************/
+/**** SM-Device******/
+@media (min-width:768px){
+    .container{
+        width: 750px;
+    }
+
+}
+/*******MD-device**********/
+@media (min-width:992px){
+    .container{
+        width: 970px;
+    }
+    
+}
+/****************XL-Device ************/
+@media (min-width:1200px){
+    .container{
+        width: 1117px;
+        
+    }    
+}
+/* ******* Components Start  */
+.card{
+    height: 700px;
+    padding: 20px 30px 10px 30px;
+    position: relative;
+    overflow: hidden;
+}
+ul{
+    list-style: none;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+}
+/* ******* Components ENd  */
+/* Card 01 Start  */
+.card_01{
+    background-color: var(--main-color);
+    color: var(--color_7);
+}
+.card_01 .bar div{
+    width: 20px;
+    height: 3px;
+    background-color:var(--color_7) ;
+    margin-bottom: 5px;
+}
+.card_01 h1{
+    margin-top: 40px;
+    padding: 10px 0;
+}
+.card_01 button{
+    text-align: center;
+    background-color: var(--color_7);
+    color: var(--main-color);
+    }
+
+.card_01 button:hover {
+    cursor: pointer;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.card_01 .contenu-img{
+    max-width: 300px;
+}
+.card_01 img {
+    width: 250%;
+    position: relative;
+    left:-100px;
+}
+.card_01 button{
+    padding: 10px;
+    width: calc( 100% - 60px);
+    border-radius: 5px;
+    border: none;
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+}
+/* End card 01 */
+/* Card 02 Start  */
+.card_02{
+    background-color:var(--card-background);
+    z-index: 1;
+}
+.card_02 .title{
+    margin-top: 30px;
+}
+.card_02 .title .overview{
+    font-size: 12px;
+    color: #AAABBC;
+}
+.card_02 .location{
+    margin-top: 40px;
+    height: 90px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: var(--color_7);
+    position: relative;
+}
+.card_02 .location::after{
+    content: "";
+    height: 100%;
+    width: calc( 100% - 12px);
+    position: absolute;
+    border-radius: 5px;
+    background-color: var(--color_1);
+    top: -9px;
+    right: 6px;
+    z-index: -2;
+}
+.card_02 .location .text div{
+    color: var(--color_6);
+    font-size: 13px;
+}
+.card_02 .location .text h4{
+    margin-top: 5px;
+    font-size: 20px;
+    width: 175px;
+}
+.card_02 ul{
+    display: flex;
+    justify-content: space-between;
+    margin-top: -20px;
+}
+.card_02 li div:first-child{
+    font-size: 11px;
+    color: #AAABBC;
+}
+.card_02 li div:last-child{
+    margin-top: 8px;
+    font-weight: 800;
+}
+.card_02 button{
+    padding: 10px;
+    width: calc( 100% - 60px);
+    background-color: var(--main-color);
+    color: var(--color_7);
+    border-radius: 5px;
+    border: none;
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+}
+.card_02 button:hover{
+    cursor: pointer;
+    background-image: linear-gradient(to right, var(--main-color), rgb(255, 217, 0));
+}
+.card_02 .image{
+    max-width: 260px;
+    margin: 0 auto;
+}
+.card_02 .image img{
+    width:120%;
+    height: auto;
+    position: relative;
+    left: -10%;
+}
+/* Card 02 End */
+/* Card 03 Start  */
+.card_03{
+    background-color: var(--card-background);
+}
+.card_03 h2{
+    margin-top: 30px;
+}
+.card_03 .one {
+    margin-top: 50px;
+    display: flex;
+    gap: 50px;
+    font-size: 1.2rem;
+}
+.card_03 .one li{
+    transition: 0.2s;
+    padding-bottom: 10px;
+    position: relative;
+}
+.card_03 .one li:first-child{
+    color: var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+}
+.card_03 .one li:hover{
+    cursor: pointer;
+    color: var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+}
+.card_03 .image{
+    max-width: 260px;
+    margin: 0 auto;
+}
+/* List Two */
+.card_03 .two{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--color-9);
+    padding-bottom: 40px;
+}
+.card_03 .two li{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: relative;
+    transition: 0.2s;
+}
+.card_03 .two li::before{
+    content: "";
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -7px;
+    opacity: .7;
+    display: none;
+}
+.card_03 .two li::after{
+    content: "";
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -11px;
+    opacity: .2;
+    display: none;
+}
+.card_03 .two li:hover::before , .two li:hover::after {
+    cursor: pointer;
+    display: block;
+}
+.card_03 .two li:first-child ,
+.card_03 .two li:first-child::before,
+.card_03 .two li:first-child::after{
+    background-color: var(--color_7);
+}
+.card_03 .two li:nth-child(2),
+.card_03 .two li:nth-child(2)::before,
+.card_03 .two li:nth-child(2)::after{
+    background-color:var(--color_4)
+}
+.card_03 .two li:nth-child(3),
+.card_03 .two li:nth-child(3)::before,
+.card_03 .two li:nth-child(3)::after{
+    background-color: var(--main-color);
+    display: block;
+}
+.card_03 .two li:nth-child(4),
+.card_03 .two li:nth-child(4)::before,
+.card_03 .two li:nth-child(4)::after{
+    background-color: var(--color_3);
+}
+.card_03 .two li:nth-child(5),
+.card_03 .two li:nth-child(5)::before,
+.card_03 .two li:nth-child(5)::after{
+    background-color: var(--color_5);
+}
+.card_03 footer{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+    width:calc(100% - 40px);
+    align-items: flex-end;
+}
+.card_03 button{
+    border: none;
+    padding: 10px 40px;
+    background-color: var(--main-color);
+    color: var(--color_7);
+    border-radius: 5px;
+}
+.card_03 footer span{
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.card_03 button:hover{
+    cursor: pointer;
+    background-image: linear-gradient(to right, var(--main-color), rgb(255, 217, 0));
+}
+/* Card 03 End */
+/* Card 04 Sarrt  */
+.card_04{
+    background-color: var(--card-background);
+}
+.card_04 h2{
+    text-align: center;
+    padding: 20px 0;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.card_04 .circle{
+    border: 2px solid var(--color_4);
+    width: 85px;
+    height: 89px;
+    margin: 20px auto;
+    border-radius: 40% ;
+    position: relative;
+}
+.card_04 .circle::before{
+    content:"2";
+    padding: 2px 6px;
+    border-radius: 50%;
+    background-color: var(--color_6);
+    color: var(--color_7);
+    position: absolute;
+    right: -2px;
+    top: -5px;
+    z-index: 3;
+}
+.card_04 .circle::after{
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--card-background);
+    position: absolute;
+    right: -6px;
+    top: -8px;
+    z-index: 2;
+}
+/* Start UL */
+.card_04 ul{
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+.card_04 li .ls-circle{
+    background-color: var(--color-10);
+    width: 55px;
+    height: 50px;
+    border-radius: 35% ;
+}
+.card_04 li {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.card_04 li .phrase{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 5px 0;
+    width: 100%;
+}
+.card_04 li .phrase div{
+    background-color:var(--color-10);
+    border-radius: 4px;
+    height: 15px;
+}
+/* li 01 */
+.card_04 li:first-child .phrase div:first-child{
+    width: 30%;
+}
+.card_04 li:first-child .phrase div:nth-child(2){
+    width: 60%;
+}
+.card_04 li:first-child .phrase div:nth-child(3){
+    width: 50%;
+}
+/* li 02 */
+.card_04 li:nth-child(2) .phrase div:first-child{
+    width: 70%;
+}
+.card_04 li:nth-child(2) .phrase div:nth-child(2){
+    width: 20%;
+}
+.card_04 li:nth-child(2) .phrase div:nth-child(3){
+    width: 47%;
+}
+/* li 03 */
+.card_04 li:nth-child(3) .phrase div:first-child{
+    width: 95%;
+}
+.card_04 li:nth-child(3) .phrase div:nth-child(2){
+    width: 50%;
+}
+/* END Ul */
+.card_04 p{
+    text-align: center;
+    font-size: 1.3rem;
+    color: var(--color_4);
+}
+.card_04 button{
+    padding: 10px;
+    width: calc( 100% - 60px);
+    background-color: var(--main-color);
+    color: var(--color_7);
+    border-radius: 5px;
+    border: none;
+    position: absolute;
+    right: 30px;
+    bottom: 60px;
+}
+.card_04 button:hover{
+    cursor: pointer;
+    background-image: linear-gradient(to right, var(--main-color), rgb(255, 217, 0));
+}
+.card_04 a{
+    text-decoration: none;
+    color: var(--color_4);
+}
+.card_04 #tag{
+    font-size: 1rem;
+    margin-top: 10px;
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.card_04 #tag:hover a{
+    color: black;
+    opacity: 0.6;
+}
+/* Card 04 end  */
+/* ********Card 05 STARt */
+.card_5{
+    background-color: var(--card-background);
+}
+.card_5 h3{
+    text-align: center;
+    position: relative;
+}
+.card_5 i{
+    position: absolute;
+    left: 10px;
+}
+.card_5 p{
+    color: var(--color_4);
+    padding: 10px 0;
+    font-size: 12px;
+}
+/* ul */
+.card_5 ul{
+    padding-top: 30px;
+}
+.card_5 li{
+    padding: 20px 10px;
+}
+.card_5 li{
+    border-bottom: 1px solid var(--color-9);
+    position: relative;
+}
+.card_5 .click::before{
+    content:"";
+    width:30px;
+    height: 12px;
+    border-radius: 10px;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.card_5 .click::after{
+    content: "";
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.card_5 li span:first-child{
+    font-weight: 500;
+}
+.card_5 li:first-child::before{
+    background-color: var(--color_1);
+}
+.card_5 li:first-child::after{
+    right: 20px;
+    background-color: var(--color_4);
+}
+.card_5 li:nth-child(2)::before{
+    background-color: var(--color_6);
+}
+.card_5 li:nth-child(2)::after{
+    background-color:var(--color_7);
+    right:5px
+}
+/* Li n 03 */
+.card_5 select{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    align-self: flex-start;
+    font-weight: bold;
+}
+.card_5 li:nth-child(3){
+    display: flex;
+    justify-content: space-between;
+}
+.card_5 li:last-child span:first-child{
+    color: red;
+}
+/* *****Card 05 end */
+/* ***** Card 06 Start */
+.card_06{
+    background-color:var(--card-background) ;
+}
+.card_06 .pic{
+    margin-top:70px;
+    margin-bottom: 30px;
+    width:60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.card_06 a{
+    color:#000;
+}
+.card_06 input{
+    outline: none;
+    border: none;
+    height: 100%;
+    width: 100%;
+    color:#000;
+    margin-top: 5%;
+    padding: 40px 25px 25px 0px;
+    background-color: var(--card-background);
+}
+.card_06 .form div{
+    border-bottom: 1px solid var(--color-9);
+    position: relative;
+}
+.card_06 label{
+    color:#a0a0a0;
+    position:absolute;
+    top:20px;
+    left: 0;
+    white-space: nowrap;
+    cursor:text;
+}
+/* ***** Card 06 End */
