@@ -73,13 +73,25 @@ Each challenge helps me improve one or more areas such as:
 
 | # | Project Name | Live Demo | Tech Used | Description |
 |---|---------------|------------|------------|--------------|
-| 1 | **IP Address Tracker** | [🔗 View Live](https://your-live-demo-link.com) | React, Leaflet, TypeScript, Tailwind | Track any IP address and view its real-time location on an interactive map. |
-| 2 | **QR Code Component** | [🔗 View Live](https://your-live-demo-link.com) | HTML, CSS | Simple responsive component challenge to practice layout and spacing. |
-| 3 | **URL Shortener App** | [🔗 View Live](https://your-live-demo-link.com) | React, TypeScript, PHP API | Shorten URLs using a custom backend and display history with validation. |
-| 4 | **Product Preview Card** | [🔗 View Live](https://your-live-demo-link.com) | HTML, CSS | Minimal product card layout to practice grid and responsive design. |
-| 5 | **Weather Dashboard** | [🔗 View Live](https://your-live-demo-link.com) | React, API | Real-time weather updates from OpenWeatherMap API with clean UI. |
+| 1 | **IP Address Tracker** | [🔗 View Live](https://your-live-demo-link.com) | React, TypeScript, Leaflet, Tailwind | Track any IP address and display its real-time location on an interactive map. |
+| 2 | **Clipboard Landing Page** | [🔗 View Live](https://your-live-demo-link.com) | React, Tailwind CSS | A clean and responsive landing page challenge focused on layout and typography. |
+| 3 | **Fylo Landing Page** | [🔗 View Live](https://your-live-demo-link.com) | React, Tailwind CSS | Modern landing page showcasing responsive design and component reusability. |
+| 4 | **Product List with Cart** | [🔗 View Live](https://your-live-demo-link.com) | React, TypeScript, Tailwind CSS | Interactive shopping cart interface with real-time product updates. |
+| 5 | **ShortURL (URL Shortener App)** | [🔗 View Live](https://your-live-demo-link.com) | React, TypeScript, PHP API, Tailwind | Shorten and manage URLs with smooth animations powered by Lenis. |
+| 6 | **Conference Ticket Generator** | [🔗 View Live](https://your-live-demo-link.com) | React, Tailwind CSS | Dynamic form that generates a digital event ticket with user details. |
+| 7 | **Multi Step Form** | [🔗 View Live](https://your-live-demo-link.com) | React, TypeScript | Multi-step form with progress tracking and validation for user input. |
+| 8 | **Calculator App** | [🔗 View Live](https://your-live-demo-link.com) | HTML, CSS, JavaScript | A responsive calculator with keyboard support and modern UI design. |
+| 9 | **Easybank Landing Page** | [🔗 View Live](https://your-live-demo-link.com) | HTML, CSS, JavaScript | Landing page challenge practicing layout, gradients, and clean design. |
+| 10 | **Expenses Chart Component** | [🔗 View Live](https://your-live-demo-link.com) | HTML, CSS, JavaScript | Visualize daily expenses using a bar chart with hover interactions. |
+| 11 | **Interactive Card Details Form** | [🔗 View Live](https://your-live-demo-link.com) | HTML, CSS, JavaScript | Form validation challenge with live preview of card details. |
+| 12 | **Interactive Rating Component** | [🔗 View Live](https://your-live-demo-link.com) | HTML, CSS, JavaScript | Simple rating component with dynamic feedback interaction. |
+| 13 | **Intro Section with Dropdown Navigation** | [🔗 View Live](https://your-live-demo-link.com) | HTML, CSS, JavaScript | Landing page with dropdown navigation and responsive menu design. |
+| 14 | **Notifications Page** | [🔗 View Live](https://your-live-demo-link.com) | HTML, CSS, JavaScript | Notification interface with dynamic unread/read state transitions. |
+| 15 | **JavaScript30 Navbar Animation** | [🔗 View Live](https://your-live-demo-link.com) | HTML, CSS, JavaScript | Interactive navbar animation challenge inspired by JS30 series. |
+| 16 | **Space Tourism Website** | [🔗 View Live](https://your-live-demo-link.com) | React, Tailwind CSS | Multi-page website featuring tab navigation and rich space-themed UI. |
 
 > 🔸 *New challenges are added regularly — stay tuned!*
+
 
 ---
 
